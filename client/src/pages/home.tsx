@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <div className="flex-1">
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-primary/5">
+      <section className="relative py-20 px-6 bg-[#37474f]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold text-[#37474f]">
+              <h1 className="text-4xl md:text-6xl font-bold text-white">
                 Healthy, Fresh Dog Food <span className="text-primary">Made Simple</span>
               </h1>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/80">
                 Premium nutrition packs tailored to your dog's needs. Made with fresh, human-grade ingredients.
               </p>
               <Link href="/waitlist">
@@ -23,8 +23,8 @@ export default function Home() {
             </div>
             <div className="flex-1">
               <img 
-                src="https://images.unsplash.com/photo-1614633836648-68ddff9f7553"
-                alt="Fresh dog food"
+                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee"
+                alt="Cute Shiba Inu"
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -33,13 +33,13 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-6 bg-[#37474f]/5">
+      <section className="py-20 px-6 bg-primary/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4 text-[#37474f]">
               Why Choose Grublify?
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-[#37474f]/80">
               We're revolutionizing dog nutrition with science-backed, fresh ingredients
             </p>
           </div>
@@ -62,16 +62,16 @@ export default function Home() {
                 image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-primary/10">
+              <div key={index} className="bg-[#37474f] text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img 
                   src={feature.image}
                   alt={feature.title}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-xl font-semibold mb-2 text-[#37474f]">
+                <h3 className="text-xl font-semibold mb-2 text-primary">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-white/80">
                   {feature.description}
                 </p>
               </div>

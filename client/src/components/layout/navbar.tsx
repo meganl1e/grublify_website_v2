@@ -12,10 +12,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="py-4 px-6 bg-primary/10 backdrop-blur supports-[backdrop-filter]:bg-primary/5 sticky top-0 z-50">
+    <nav className="py-4 px-6 bg-primary sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/">
-          <a className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
+          <a className="text-2xl font-bold text-white hover:text-white/90 transition-colors">
             Grublify
           </a>
         </Link>
@@ -26,8 +26,8 @@ export default function Navbar() {
               <NavigationMenuItem key={link.href}>
                 <Link href={link.href}>
                   <NavigationMenuLink 
-                    className={`px-4 py-2 text-sm font-medium transition-colors hover:text-primary
-                      ${location === link.href ? 'text-primary' : 'text-muted-foreground'}`}
+                    className={`px-4 py-2 text-sm font-medium transition-colors hover:text-white
+                      ${location === link.href ? 'text-white' : 'text-white/80'}`}
                   >
                     {link.label}
                   </NavigationMenuLink>
