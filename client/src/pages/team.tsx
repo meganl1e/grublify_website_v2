@@ -8,7 +8,7 @@ export default function Team() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We're a passionate team of pet nutrition experts, veterinarians, and dog lovers 
-            working together to bring better nutrition to every dog bowl.
+            working together to bring better nutrition to every <span className="text-primary">dog bowl</span>.
           </p>
         </div>
 
@@ -39,16 +39,16 @@ export default function Team() {
               bio: "Supply chain expert ensuring fresh ingredient quality"
             }
           ].map((member, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div key={index} className="bg-white p-6 rounded-lg text-center border border-gray-100">
               <img 
                 src={member.image}
                 alt={member.name}
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-primary"
               />
               <h3 className="text-xl font-semibold mb-1" style={{ color: '#37474f' }}>
                 {member.name}
               </h3>
-              <p className="text-sm font-medium mb-2" style={{ color: '#6fceb7' }}>
+              <p className="text-sm font-medium mb-2 text-primary">
                 {member.role}
               </p>
               <p className="text-sm text-muted-foreground">
