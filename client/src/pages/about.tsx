@@ -2,13 +2,13 @@ export default function About() {
   return (
     <div className="flex-1">
       {/* Mission Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-primary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold mb-6" style={{ color: '#37474f' }}>
+            <h1 className="text-4xl font-bold mb-6 text-white">
               Our Mission
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               At Grublify, we believe every dog deserves fresh, nutritious food made with real ingredients. 
               We're on a mission to revolutionize pet nutrition through science and innovation.
             </p>
@@ -20,11 +20,11 @@ export default function About() {
               alt="Happy dog eating"
               className="rounded-lg shadow-xl"
             />
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold" style={{ color: '#6fceb7' }}>
+            <div className="space-y-6 bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+              <h2 className="text-3xl font-bold text-white">
                 Why Fresh Food Matters
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/90">
                 Just like humans, dogs thrive on fresh, minimally processed food. Our nutrition packs are made with 
                 human-grade ingredients, perfectly balanced for your dog's optimal health.
               </p>
@@ -35,9 +35,9 @@ export default function About() {
                   "Healthier coat and skin",
                   "Better weight management"
                 ].map((benefit, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#6fceb7' }} />
-                    <span className="text-muted-foreground">{benefit}</span>
+                  <li key={index} className="flex items-center gap-2 text-white/90">
+                    <div className="w-2 h-2 rounded-full bg-white" />
+                    <span>{benefit}</span>
                   </li>
                 ))}
               </ul>
@@ -47,9 +47,9 @@ export default function About() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6 bg-[#37474f]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-16" style={{ color: '#37474f' }}>
+          <h2 className="text-3xl font-bold text-center mb-16 text-primary">
             Our Process
           </h2>
 
@@ -71,16 +71,16 @@ export default function About() {
                 image: "https://images.unsplash.com/photo-1514995669114-6081e934b693"
               }
             ].map((step, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+              <div key={index} className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
                 <img 
                   src={step.image}
                   alt={step.title}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-xl font-semibold mb-2" style={{ color: '#6fceb7' }}>
+                <h3 className="text-xl font-semibold mb-2 text-primary">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-white/90">
                   {step.description}
                 </p>
               </div>
