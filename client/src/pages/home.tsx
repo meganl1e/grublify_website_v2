@@ -25,7 +25,7 @@ export default function Home() {
               <img 
                 src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6"
                 alt="Happy Shiba Inu"
-                className="rounded-lg shadow-xl"
+                className="rounded-lg"
               />
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
                 image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-primary p-6 rounded-lg">
                 <img 
                   src={feature.image}
                   alt={feature.title}

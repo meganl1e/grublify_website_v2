@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="flex-1">
       {/* Mission Section */}
-      <section className="py-20 px-6 bg-primary">
+      <section className="py-20 px-6 bg-gradient-to-b from-[#37474f] to-[#37474f]/90">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold mb-6 text-white">
@@ -18,13 +18,13 @@ export default function About() {
             <img 
               src="https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2"
               alt="Happy dog eating"
-              className="rounded-lg shadow-xl"
+              className="rounded-lg"
             />
-            <div className="space-y-6 bg-white/10 p-8 rounded-lg backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-white">
+            <div className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+              <h2 className="text-3xl font-bold text-primary mb-4">
                 Why Fresh Food Matters
               </h2>
-              <p className="text-lg text-white/90">
+              <p className="text-lg text-white/90 mb-6">
                 Just like humans, dogs thrive on fresh, minimally processed food. Our nutrition packs are made with 
                 human-grade ingredients, perfectly balanced for your dog's optimal health.
               </p>
@@ -35,8 +35,8 @@ export default function About() {
                   "Healthier coat and skin",
                   "Better weight management"
                 ].map((benefit, index) => (
-                  <li key={index} className="flex items-center gap-2 text-white/90">
-                    <div className="w-2 h-2 rounded-full bg-white" />
+                  <li key={index} className="flex items-center gap-3 text-white/90">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                     <span>{benefit}</span>
                   </li>
                 ))}
@@ -47,9 +47,9 @@ export default function About() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 px-6 bg-[#37474f]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-16 text-primary">
+          <h2 className="text-3xl font-bold text-center mb-16 text-[#37474f]">
             Our Process
           </h2>
 
@@ -71,7 +71,7 @@ export default function About() {
                 image: "https://images.unsplash.com/photo-1514995669114-6081e934b693"
               }
             ].map((step, index) => (
-              <div key={index} className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+              <div key={index} className="bg-primary/10 p-6 rounded-lg">
                 <img 
                   src={step.image}
                   alt={step.title}
@@ -80,7 +80,7 @@ export default function About() {
                 <h3 className="text-xl font-semibold mb-2 text-primary">
                   {step.title}
                 </h3>
-                <p className="text-white/90">
+                <p className="text-[#37474f]/80">
                   {step.description}
                 </p>
               </div>
