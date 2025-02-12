@@ -33,13 +33,13 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-6 bg-primary/10">
+      <section className="py-20 px-6 bg-primary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-[#37474f]">
+            <h2 className="text-3xl font-bold mb-4 text-white">
               Why Choose Grublify?
             </h2>
-            <p className="text-lg text-[#37474f]/80">
+            <p className="text-lg text-white/80">
               We're revolutionizing dog nutrition with science-backed, fresh ingredients
             </p>
           </div>
@@ -58,17 +58,17 @@ export default function Home() {
               },
               {
                 title: "Convenient Delivery",
-                description: "Regular deliveries right to your doorstep, perfectly portioned",
+                description: "Fresh, perfectly portioned meals delivered right to your door",
                 image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-[#37474f] text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img 
                   src={feature.image}
                   alt={feature.title}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-xl font-semibold mb-2 text-primary">
+                <h3 className="text-xl font-semibold mb-2 text-white">
                   {feature.title}
                 </h3>
                 <p className="text-white/80">
@@ -80,10 +80,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* New Benefits Section */}
-      <section className="py-20 px-6 bg-primary">
+      {/* Benefits Section */}
+      <section className="py-20 px-6 bg-[#37474f]">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12 text-white">
+          <h2 className="text-3xl font-bold mb-12 text-primary">
             Your Dog Deserves The Best
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
