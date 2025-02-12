@@ -33,13 +33,13 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-6 bg-primary">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-white">
+            <h2 className="text-3xl font-bold mb-4 text-[#37474f]">
               Why Choose Grublify?
             </h2>
-            <p className="text-lg text-white/80">
+            <p className="text-lg text-[#37474f]/80">
               We're revolutionizing dog nutrition with science-backed, fresh ingredients
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
                 image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
               }
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img 
                   src={feature.image}
                   alt={feature.title}
@@ -71,7 +71,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2 text-white">
                   {feature.title}
                 </h3>
-                <p className="text-white/80">
+                <p className="text-white/90">
                   {feature.description}
                 </p>
               </div>
