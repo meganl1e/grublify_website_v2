@@ -12,12 +12,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="border-b py-4 px-6 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+    <nav className="py-4 px-6 bg-primary/10 backdrop-blur supports-[backdrop-filter]:bg-primary/5 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/">
-          <a className="text-2xl font-bold" style={{ color: '#6fceb7' }}>Grublify</a>
+          <a className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
+            Grublify
+          </a>
         </Link>
-        
+
         <NavigationMenu>
           <NavigationMenuList>
             {links.map((link) => (
