@@ -23,8 +23,8 @@ export default function Home() {
             </div>
             <div className="flex-1">
               <img 
-                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee"
-                alt="Cute Shiba Inu"
+                src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6"
+                alt="Happy Shiba Inu"
                 className="rounded-lg shadow-xl"
               />
             </div>
