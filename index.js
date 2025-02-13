@@ -68,7 +68,7 @@ import { fileURLToPath } from "url";
 var __filename = fileURLToPath(import.meta.url);
 var __dirname = dirname(__filename);
 var vite_config_default = defineConfig({
-  base: "/grublify_website_v2/",
+  base: "/grublify_website_v2",
   plugins: [react(), runtimeErrorOverlay(), themePlugin()],
   resolve: {
     alias: {
